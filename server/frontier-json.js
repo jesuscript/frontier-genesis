@@ -15,7 +15,6 @@ JsonRoutes.add("get", "/genesis.json", function(req,res,next){
       genesisJson.extraData = "replace with the hash of block #1028201";
     }
     
-    console.log(resp);
     JsonRoutes.sendResult(res, 200, genesisJson);
   });
 });
